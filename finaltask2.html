@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basketball Product Order Form</title>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(224, 180, 224);
+            padding: 100px;
+        }
+
+        #context{
+            background-color: pink;
+            text-align: center;
+            border:  20px;
+            width: 500px;
+            margin-left: 350px;
+            padding: 20px;
+        }
+
+    </style>
+
+    <div id="context">
+	<h2>Basketball Products Order Form</h2>
+
+	<form>
+		<label>Number of Items:</label>
+		<input type="text" id="quantity" value="0">
+		<button type="button" onclick="increment()">+</button>
+		<button type="button" onclick="decrement()">-</button>
+		<br>
+		<label>Shipping &amp; Handling Fee:</label>
+		<input type="text" id="shipping" value="4.99" readonly>
+		<br>
+		<button type="button" onclick="calculate()">Calculate</button>
+		<br>
+    </form>
+			<h2>Order Summary</h2>
+			<p>Items: <span id="items">0</span></p>
+			<p>Shipping and handling: $<span id="shippingFee">4.99</span></p>
+			<p>Total before tax: <span id="totalBeforeTax">0.00</span></p>
+			<p>Estimated tax (10%): <span id="tax">0.00</span></p>
+			<p>Order total: <span id="orderTotal">0.00</span></p>
+	</div>
+	</form>
+</body>
+</html>
